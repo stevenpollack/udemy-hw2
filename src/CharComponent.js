@@ -17,7 +17,7 @@ class CharComponent extends Component {
           style={this.style}
           onClick={this.props.handleClick}
         >
-          {this.props.char}
+          {this.props.char === ' ' ? '\u00a0' : this.props.char}
         </div>
       )
     }
